@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  web_app_server:
+    build: ../../
+    container_name: node_server
+    restart: always
+    ports:
+      - 8000:8000
+    command: [npm, run, dev]
